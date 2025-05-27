@@ -1,0 +1,50 @@
+<!DOCTYPE html> <!-- Declara o tipo do documento como HTML5 -->
+<html lang="pt-BR"> <!-- Define o idioma principal da página como português do Brasil -->
+<head>
+  <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+  <title>Pagamento | Comida Coreana</title> <!-- Título da aba do navegador -->
+  <link rel="stylesheet" href="pagina3.css"> <!-- Link para o arquivo CSS externo -->
+</head>
+<body>
+  <div class="container"> <!-- Container principal da página -->
+    
+    <header> <!-- Cabeçalho da página -->
+      <h1>Finalizar Pedido</h1> <!-- Título principal -->
+      <p>Hora de saborear a culinária coreana!</p> <!-- Subtítulo ou descrição -->
+    </header>
+
+    <main> <!-- Conteúdo principal da página -->
+      
+      <section class="resumo-pedido"> <!-- Seção do resumo do pedido -->
+        <h2>Resumo do Pedido</h2> <!-- Título da seção -->
+        <p id="resumoPagamento">Total: R$ 0,00</p> <!-- Parágrafo com o valor total do pedido (inicialmente R$ 0,00) -->
+      </section>
+
+      <section class="acoes"> <!-- Seção com os botões de ação -->
+        <button id="gerarPix">Gerar QR Code Pix</button> <!-- Botão para gerar o QR Code para pagamento via Pix -->
+        <button id="finalizar">Finalizar Compra</button> <!-- Botão para finalizar a compra -->
+        <button id="editarPedido">Editar Pedido</button> <!-- Botão para voltar e editar o pedido -->
+        <button id="cancelarPedido">Cancelar Pedido</button> <!-- Botão para cancelar o pedido -->
+      </section>
+
+      <section id="qrcode-area" class="qrcode-area" style="display: none;"> <!-- Seção do QR Code, inicialmente escondida -->
+        <h2>Escaneie o QR Code para pagar com PIX</h2> <!-- Título da seção do QR Code -->
+        <div id="qrcode"></div> <!-- Div onde o QR Code será gerado dinamicamente pelo JavaScript -->
+      </section>
+
+    </main>
+
+    <footer> <!-- Rodapé da página -->
+      <p>&copy; 2025 Comida Coreana</p> <!-- Texto de direitos autorais -->
+    </footer>
+
+  </div>
+
+  <!-- Importa a biblioteca externa para geração de QR Code -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+  <!-- Importa o script JavaScript da página (lógica de interação) -->
+  <script src="pagina3.js"></script>
+
+</body>
+</html>
